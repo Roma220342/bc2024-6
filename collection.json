@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "b9cafe3e-31ce-4de6-a1dc-83b7425b1865",
+		"name": "bc2024-5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39146939"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/notes/write",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note_name\": \"Поклик прип'яті\",\r\n    \"note\": \"S.T.A.L.K.E.R.2 - ТОП, чекали 15 років\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/notes/write"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/notes/update/Поклик Прип'яті",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note\": \"Правда, оптимізація там, звісно, так собі... храмає\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/notes/update/Поклик Прип'яті"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/notes/read/Поклик Прип'яті",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/notes/read"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/notes/read/Поклик Прип'яті",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/notes/read/Поклик Прип'яті"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/notes/delete/Поклик Прип'яті",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/notes/delete/Поклик Прип'яті"
+			},
+			"response": []
+		}
+	]
+}
